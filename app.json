@@ -15,13 +15,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan qrcode and documents"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      }, 
+      "permissions": [ "CAMERA", "ACCESS_FINE_LOCATION" ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
